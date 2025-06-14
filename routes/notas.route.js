@@ -3,12 +3,12 @@ import { getNotas, createNota, updateNota, deleteNota } from '../controllers/not
 
 const notasRouter = express.Router();
 // api/notas
-notasRouter.get('/', getNotas);
+notasRouter.get('/notas', getNotas);
 // api/notas
-notasRouter.post('/', createNota);
+notasRouter.post('/notas', createNota);
 // api/notas/:id
-notasRouter.put('/:id', updateNota);
+notasRouter.put('/notas/:id', updateNota);
 // api/notas/:id
-notasRouter.delete('/:id', deleteNota);
+notasRouter.delete('/notas/:id', deleteNota);
 
 export default notasRouter;
